@@ -1,0 +1,68 @@
+Question 1.how to integrate css file in html file?
+ Answer-b) using <link> tag
+ 
+
+Question 2. How do you make a new paragraph in HTML?
+Answer-b) using p tag
+
+
+Question 3. Div tag is a inline-block element?
+Answer-b) false
+
+
+Question 4. Span is an inline-block element?
+Answer-b) false
+
+
+Question 5. Question 5. What is the output of following code?(1 mark)
+function ValueOfC(){
+Var y = 10;
+Var c = y ** y console.log(c);
+Return c; }
+ValueOfC() // —-->
+
+Answer-c) 10000000000
+
+
+Q8 : given an array
+var users = [
+{firstName : "Susan", lastName: "Steward"},
+{firstName : "Daniel", lastName: "Longbottom"},
+{firstName : "Jacob", lastName: "Black"}
+];
+outputarray = ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+
+Answer-c)map function
+
+
+Q10: what will be the value of arr? var arr = [1,2,3,4,5].filter(func)
+function func(v){ return false;
+}
+
+Answer-C)[]
+
+
+Q11: what is the key difference between these two properties?Choose appropriate option.
+ Display : none and visibility:hidden
+ 
+Answer-B)display : none removes the element from the dom
+while visibility : hidden just hides the element.
+
+
+Q12: what will be the output of following code? var a = 1;
+var b = 0;
+while (a <= 3)
+{
+a++;
+b += a * 2;
+console.log(b); }
+
+Answer-A)4 10 18
+
+
+Q13: at the end of both operations what will be the value of arr? (2 marks)
+ Var arr= [1,2,3,4]
+ arr.unshift(100)
+ arr.shift()
+
+Answer-A) [1,2,3,4]
