@@ -1,0 +1,60 @@
+let express = require('express');
+let app = express();
+
+let fs = require('fs');
+
+fs.readFile('./myFile.txt', (err, data) =>{
+    console.log(String(data))
+})
+
+fs.writeFile('./myFile.txt', 'hello WOrld', (err) =>{
+    console.log('hello world')
+})
+fs.writeFile('./newFile.txt', 'hi new file has been created', (err) =>{
+  console.log('new file has been created')
+})
+
+let todos = [
+    'buy milk',
+    'buy cricket bat',
+    'watch a movie', 
+    'play cricket'
+]
+
+app.get('/allTodos', (req, res) =>{
+
+    res.json(todos)
+
+})
+
+
+app.get('/todo/:index', (req, res) =>{
+    console.log(req.params);
+    console.log(typeof req.params.index)
+    let todo = todos[Number(req.params.index)]
+    res.send(todo)
+})
+// app.get('/',(req, res) =>{
+
+//     res.send('hi this response is from server')
+// })
+// app.get('/facebook',(req, res) =>{
+
+//     res.send('hi this response facebook')
+// })
+
+// app.get('/google',(req,res)=>{
+//     console.log(req.url)
+//     res.send('hii this is from google ')
+// })
+
+
+
+
+
+
+
+
+app.listen(5500, () =>{
+    console.log('server has started')
+})
